@@ -54,8 +54,6 @@ class Form extends React.Component {
         })
       })
   }
-  document.querySelector("form").addEventListener("submit", handleSubmit);
-  
   render() {
     const { name, subject, action } = this.props
 
