@@ -61,14 +61,13 @@ class Form extends React.Component {
         <Helmet>
           <script src="https://www.google.com/recaptcha/api.js" />
         </Helmet>
-        <form
+        <form netlify
           className="Form"
           name={name}
           action={action}
           onSubmit={this.handleSubmit}
           data-netlify="true"
           data-netlify-recaptcha="true"
-          netlify
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
