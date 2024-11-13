@@ -25,10 +25,12 @@ class Form extends React.Component {
     if (this.state.disabled) return
 
     const form = e.target
-    const data = serialize(form)
+    const data = new FormData(form)
     this.setState({ disabled: true })
-    fetch(form.action + '?' + stringify(data), {
-      method: 'POST'
+    fetch("/" , {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(data).toString()
     })
       .then(res => {
         if (res.ok) {
