@@ -27,7 +27,7 @@ class Form extends React.Component {
     const form = e.target
     const data = new FormData(form)
     this.setState({ disabled: true })
-    fetch("/" , {
+    fetch("/contact/" , {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(data).toString()
