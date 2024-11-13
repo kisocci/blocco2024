@@ -2,26 +2,22 @@
 template: ContactPage
 slug: contact
 title: Contact Page
-featuredImage: https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/
-subtitle: This is the contact page subtitle.
-address: '404 James St, Burleigh Heads QLD 4220'
-phone: 0987 123 456
-email: example@example.com
+featuredImage: '/assets/block4.jpg'
+subtitle: Please feel free to contact us.
+company: blocco deli architects Inc.
+company_ja: ブロッコ・デリ・アーキテクツ有限会社
+establishedIn: 10th December 2001
+address: 2F OkinawaTimes Bld., 2-2-2, Kumoji, Naha-shi, Okinawa 9000014
+address_ja: 〒900-0015 沖縄県那覇市久茂地2-2-2 タイムスビル 2F
+phone: 050-5874-3768
+email: info@blocco-deli.co.jp
 locations:
-  - lat: '-27.9654732'
-    lng: '153.2432449'
+  - lat: '26.215810'
+    lng: '127.679071'
     mapLink: ''
 meta:
-  description: This is a meta description.
+  description: Please feel free to contact us.
   title: Contact Page
 ---
 
-# Example contact form
-
-This form is setup to use Netlify's form handling:
-
-- the form action is set to the current absolute url: `action: '/contact/'`
-- a name attribute is sent with the form's data `'form-name': 'Contact'`
-- netlify data attributes are added to the form `data-netlify data-netlify-honeypot`
-
-Find out more in the [Netlify Docs](https://www.netlify.com/docs/form-handling/).
+# お問い合わせ先
