@@ -58,7 +58,6 @@ export const ContactPageTemplate = ({
                 <Smartphone /> {phone} <small>※お電話がとれない場合がございます。<br/>　Eメールでお問い合わせください。</small>
               </a>
             )}
-            <hr class="Contact--Details-hr"/>
             <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-4">設立　</b>2001年12月10日</a>
             <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-3">代表者　</b>取締役社長　木曽 隆</a>
             <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-2">取引銀行　</b>沖縄銀行 本店営業部</a>
