@@ -4,7 +4,7 @@ title: 紅星家具集団　上海真北店「未来之家／智能之家」
 slug: dooh/redstar
 status: Published
 date: '2008-05-15'
-featuredImage: '/blog/redstar/2.jpg'
+featuredImage: '../images/blog/redstar/2.jpg'
 excerpt: >-
   上海にオープンした家具に特化した巨大ショッピングセンターにおける、未来展示（一部）を制作しました。
 categories:

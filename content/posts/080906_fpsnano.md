@@ -4,7 +4,7 @@ title: XBee搭載のiPhone nano !?
 slug: blog/fpsnano
 status: Published
 date: '2008-09-06'
-featuredImage: '/blog/fpsnano/nano2.jpg'
+featuredImage: '../images/blog/fpsnano/nano2.jpg'
 excerpt: >-
   2008年9月。大阪で行われた、Flash Power Sessionに木曽が参加しました。iPhone nano。
 categories:

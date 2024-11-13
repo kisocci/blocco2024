@@ -4,7 +4,7 @@ title: なないろウォーターキャンペーン @新宿駅地下コンコ�
 slug: dooh/nanairo
 status: Published
 date: '2014-05-10'
-featuredImage: '/blog/nanairo1.jpg'
+featuredImage: '../images/blog/nanairo1.jpg'
 excerpt: >-
   「なないろウォーターキャンペーン」の装置制御プログラムを製作しました。
 categories:

@@ -4,7 +4,7 @@ title: RFIDタグによる「拾う」インタフェース @芸術工学会
 slug: blog/kougakukai1
 status: Published
 date: '2008-09-06'
-featuredImage: '/blog/rfid/r0010768.JPG'
+featuredImage: '../images/blog/rfid/r0010768.JPG'
 excerpt: >-
   芸術工学会2009春季大会（沖縄）での出展
 categories:

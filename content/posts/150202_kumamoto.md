@@ -4,7 +4,7 @@ title: グランメッセ熊本様 施設案内サイネージ
 slug: dooh/kumamoto
 status: Published
 date: '2015-02-01'
-featuredImage: '/blog/nblo_a4_3.png'
+featuredImage: '../images/blog/nblo_a4_3.png'
 excerpt: >-
   グランメッセ熊本の施設案内サイネージを構築しました。
 categories:
