@@ -22,38 +22,13 @@ class Form extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    if (this.state.disabled) return
-
     const form = e.target
-    const data = new FormData(form)
     this.setState({ disabled: true })
-    fetch("/" , {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(data).toString()
-    })
-      .then(res => {
-        if (res.ok) {
-          return res
-        } else {
-          throw new Error('Network error')
-        }
-      })
-      .then(() => {
-        form.reset()
-        this.setState({
-          alert: this.props.successMessage,
-          disabled: false
-        })
-      })
-      .catch(err => {
-        console.error(err)
-        this.setState({
-          disabled: false,
-          alert: this.props.errorMessage
-        })
-      })
+
+    // Standard form submission without fetch
+    form.submit()
   }
+  
   render() {
     const { name, subject, action } = this.props
 
