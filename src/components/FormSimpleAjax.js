@@ -7,8 +7,8 @@ import './Form.css'
 
 class Form extends React.Component {
   static defaultProps = {
-    name: 'Simple Form Ajax',
-    subject: '', // optional subject of the notification email
+    name: 'bloccoContact',
+    subject: 'フォームお問い合わせ', // optional subject of the notification email
     action: '',
     successMessage: 'Thanks for your enquiry, we will get back to you soon',
     errorMessage:
@@ -66,8 +66,8 @@ class Form extends React.Component {
           name={name}
           action={action}
           onSubmit={this.handleSubmit}
-          data-netlify=""
-          netlify-recaptcha=""
+          data-netlify="true"
+          data-netlify-recaptcha="true"
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
@@ -94,27 +94,16 @@ class Form extends React.Component {
               <span>Lastname</span>
             </label>
           </div>
-          <fieldset>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="male"
-                defaultChecked
-              />
-              <span>Male</span>
-            </label>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="female"
-              />
-              <span>Female</span>
-            </label>
-          </fieldset>
+          <label className="Form--Label">
+            <input
+              className="Form--Input Form--InputText"
+              type="company"
+              placeholder="Company Name"
+              name="companyName"
+              required
+            />
+            <span>Company Name</span>
+          </label>
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
@@ -135,9 +124,9 @@ class Form extends React.Component {
               <option disabled hidden>
                 Type of Enquiry
               </option>
-              <option>Need to know more</option>
-              <option>Found a bug</option>
-              <option>Want to say hello</option>
+              <option>DOOHについて</option>
+              <option>ウェブシステム開発について</option>
+              <option>その他</option>
             </select>
           </label>
           <label className="Form--Label">
@@ -156,18 +145,18 @@ class Form extends React.Component {
               name="newsletter"
               type="checkbox"
             />
-            <span>Get news updates</span>
+            <span>ニュースを受け取る</span>
           </label>
           <div
             className="g-recaptcha"
-            data-sitekey="6LfKN3kUAAAAAGIM1CbXmaRZx3LIh_W2twn1tzkA"
+            data-sitekey="6LcQf-cUAAAAALLF1W42Q9En0GluCT7anR6i6DbS"
           />
           {!!subject && <input type="hidden" name="subject" value={subject} />}
           <input type="hidden" name="form-name" value={name} />
           <input
             className="Button Form--SubmitButton"
             type="submit"
-            value="Enquire"
+            value="送信"
             disabled={this.state.disabled}
           />
         </form>

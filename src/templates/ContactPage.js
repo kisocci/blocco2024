@@ -59,10 +59,10 @@ export const ContactPageTemplate = ({
               </a>
             )}
             <hr class="Contact--Details-hr"/>
-            <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-4">設立</b>2001年12月10日</a>
-            <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-3">代表者</b>取締役社長　木曽 隆</a>
-            <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-2">取引銀行</b>沖縄銀行 本店営業部</a>
-            <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-1">主要取引先</b>琉球放送株式会社、株式会社ハヤテ</a>
+            <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-4">設立　</b>2001年12月10日</a>
+            <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-3">代表者　</b>取締役社長　木曽 隆</a>
+            <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-2">取引銀行　</b>沖縄銀行 本店営業部</a>
+            <a className="Contact--Details--Item Contact--Details--Cursor" href="javascript:void(0);"><Box /><b class="Contact--Details--HItem-1">主要取引先　</b>ファイバーキャストジャパン株式会社、株式会社ハヤテ</a>
             
           </div>
         </div>
