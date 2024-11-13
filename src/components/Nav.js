@@ -20,23 +20,12 @@ export class Navigation extends Component {
 
   // Only close nav if it is open
   handleLinkClick = () => this.state.active && this.handleMenuToggle()
-  // keyboard events
-  handleLinkKeyDown = ev => {
-    if (ev.keyCode === 13) {
-      this.state.active && this.handleMenuToggle()
-    }
-  }
 
   toggleSubNav = subNav =>
     this.setState({
       activeSubNav: this.state.activeSubNav === subNav ? false : subNav
     })
-  keyToggleSubNav = (e, subNav) => {
-    // key o is for open so you can enter key to open
-    if (e.keyCode === 79 || e.keyCode === 27) {
-      this.toggleSubNav(subNav)
-    }
-  }
+
   render() {
     const { active } = this.state,
       { subNav } = this.props,
@@ -47,10 +36,6 @@ export class Navigation extends Component {
             to === this.state.currentPath ? 'active' : ''
           } ${className}`}
           onClick={this.handleLinkClick}
-          onKeyDown={this.handleLinkKeyDown}
-          tabIndex={0}
-          aria-label="Navigation"
-          role="button"
           {...props}
         >
           {children}
@@ -60,19 +45,13 @@ export class Navigation extends Component {
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container">
-          <Link
-            to="/"
-            onClick={this.handleLinkClick}
-            onKeyDown={this.handleLinkKeyDown}
-            tabIndex={0}
-            aria-label="Navigation"
-            role="button"
-          >
+          <Link to="/" onClick={this.handleLinkClick}>
             <Logo />
           </Link>
           <div className="Nav--Links">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/components/">Components</NavLink>
+            <NavLink to="/dooh/">DOOH</NavLink>
+            <NavLink to="/experiment/">Experiment</NavLink>
             <div
               className={`Nav--Group ${
                 this.state.activeSubNav === 'posts' ? 'active' : ''
@@ -82,15 +61,11 @@ export class Navigation extends Component {
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('posts') ||
                   this.props.location.pathname.includes('blog') ||
-                  this.props.location.pathname.includes('post-categories')
+                  this.props.location.pathname.includes('publication')
                     ? 'active'
                     : ''
                 }`}
                 onClick={() => this.toggleSubNav('posts')}
-                onKeyDown={e => this.keyToggleSubNav(e, 'posts')}
-                tabIndex={0}
-                aria-label="Navigation"
-                role="button"
               >
                 Blog
                 <div className="Nav--GroupLinks">
@@ -109,14 +84,11 @@ export class Navigation extends Component {
                 </div>
               </span>
             </div>
-            <NavLink to="/default/">Default</NavLink>
             <NavLink to="/contact/">Contact</NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"
             onClick={this.handleMenuToggle}
-            tabIndex={0}
-            aria-label="Navigation"
           >
             {active ? <X /> : <Menu />}
           </button>
