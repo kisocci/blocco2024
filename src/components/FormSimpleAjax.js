@@ -65,7 +65,7 @@ class Form extends React.Component {
         <form netlify
           className="Form"
           name={name}
-          action='/'
+          action='/contact/'
           method='post'
           onSubmit={this.handleSubmit}
           data-netlify="true"
