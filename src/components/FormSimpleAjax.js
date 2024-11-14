@@ -27,7 +27,7 @@ class Form extends React.Component {
     const form = e.target
     const data = new FormData(form)
     this.setState({ disabled: true })
-    fetch("/contact/" , {
+    fetch("/" , {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(data).toString()
@@ -65,7 +65,7 @@ class Form extends React.Component {
         <form netlify
           className="Form"
           name={name}
-          action='/contact/'
+          action='/'
           method='post'
           onSubmit={this.handleSubmit}
           data-netlify="true"
