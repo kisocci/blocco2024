@@ -26,6 +26,13 @@ class Form extends React.Component {
 
     const form = e.target
     const data = new FormData(form)
+
+    // Get reCAPTCHA response
+    const recaptchaResponse = window.grecaptcha && window.grecaptcha.getResponse()
+    if (recaptchaResponse) {
+      data.append('g-recaptcha-response', recaptchaResponse)
+    }
+
     this.setState({ disabled: true })
     fetch("/" , {
       method: 'POST',
@@ -41,6 +48,10 @@ class Form extends React.Component {
       })
       .then(() => {
         form.reset()
+        // Reset reCAPTCHA
+        if (window.grecaptcha) {
+          window.grecaptcha.reset()
+        }
         this.setState({
           alert: this.props.successMessage,
           disabled: false
