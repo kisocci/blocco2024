@@ -34,7 +34,7 @@ class Form extends React.Component {
     }
 
     this.setState({ disabled: true })
-    fetch("/" , {
+    fetch("/.netlify/functions/submit-form" , {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(data).toString()
