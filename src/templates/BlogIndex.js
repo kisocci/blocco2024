@@ -103,7 +103,8 @@ const BlogIndex = ({ data: { page, posts, postCategories } }) => (
       posts={posts.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
-        ...post.node.fields
+        ...post.node.fields,
+        excerpt: post.node.frontmatter.excerpt || post.node.excerpt
       }))}
       postCategories={postCategories.edges.map(post => ({
         ...post.node,
@@ -153,6 +154,7 @@ export const pageQuery = graphql`
               category
             }
             featuredImage
+            excerpt
           }
         }
       }
