@@ -8,12 +8,10 @@ meta:
   description: We are artisans bring various primitives to life through the power of design and engineering and enjoy them for many people.
   title: blocco deli architects Inc.
 ---
-Thank you for your access.
-We are skilled in developing systems with a focus on DOOH.
-Please feel free to contact us for more information.
+## ブロッコ・デリ・アーキテクツ有限会社
 
-View the [our projects](/dooh/).
+[DOOH開発](/dooh/)、ウェブシステム開発、生成AI支援
 
-# The signage systems equipment we handle
+## The signage systems equipment we handle
 
 * **[SpinetiX](https://spinetix.com)** HMP Series, The Intelligent Player controlled with SVG and Javascript.
